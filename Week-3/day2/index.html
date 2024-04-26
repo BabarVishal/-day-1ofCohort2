@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick='getHomepage()'>get data</button>
+</body>
+<script>
+    // function getHomepage(){
+    //   fetch("http://localhost:3000/")
+    //   .then(function(response){
+    //     response.json()
+    //     .then(function(finalData){
+    //        console.log(finalData);
+    //     })
+    //   })
+
+    // }
+
+   async function getHomepage(){
+    const response = await  fetch("http://localhost:3000/")
+    const finalData = await response.json()
+    console.log(finalData);
+    }
+</script>
+</html>
