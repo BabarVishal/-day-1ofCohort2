@@ -5,7 +5,7 @@ const db = require('./DB');
 
 const HostelBoys = require('./module/Hostelboys');
 const Singin = require('./module/SingIn');
-// const Singin = require('./module/SingIn');
+
 
 app.post("/SingIn", async(req, res) =>{
      try {

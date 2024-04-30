@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SumOFTwoNum</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <br>
+    <input type="text" id="text2">
+    <br>
+    <button onclick="SumOFTwoNum()">Sum</button>
+    <p id="result"></p>
+</body>
+<script>
+    function SumOFTwoNum(){
+        const sum1 = parseFloat(document.getElementById("text").value);
+        const sum2 = parseFloat(document.getElementById("text2").value);
+        
+        const sum = sum1 + sum2;
+   
+        document.getElementById('result').innerHTML = "The Sum Of " + sum;
+    }
+</script>
+</html>
+
